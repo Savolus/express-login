@@ -15,7 +15,7 @@ mysql -u root
 ```
 **Notice**, if you have `Permission denied` message, then you just need to add `sudo` keyword before `mysql` command.
 
-And run initialize sql file:
+Run initializing sql file:
 ```sql
 SOURCE sql/init.sql;
 ```
@@ -41,7 +41,8 @@ DB_PASSWORD: 'password'
 ```
 were choosen to learn how to implement simple secure login system using Express.js and MySQL.
 
-Also `.env` and `sql/init.sql` were pushed because of learning. In production **YOU SHOULDN'T PUSH `.env` AND `sql/init.sql` FILES**!
+Also `.env` and `sql/init.sql` were pushed because of learning. \
+In production **YOU SHOULDN'T PUSH `.env` AND `sql/init.sql` FILES**!
 
 ## **Bugs** 🐛
 
