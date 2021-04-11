@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <span class="heading">Express Login</span>
+        <% if (!title.includes('Sign')) { %>
+            <form action="/logout" method="get" id="auth-out">
+                <input type="submit" value="Sign out" class="heading">
+            </form>
+        <% } %>
+    </header>
+    <main>

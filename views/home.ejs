@@ -1,0 +1,16 @@
+<%- include('templates/header.ejs') %> 
+
+    <div class="centered">
+        <div class="card">
+            <h1>Your credentials</h1>
+            <ul class="info">
+                <% for (const key in user) { %>
+                    <li class="item">
+                        <%= key %>: <%= user[key] %>
+                    </li>
+                <% } %> 
+            </ul>
+        </div>
+    </div>
+
+<%- include('templates/footer.ejs') %> 
